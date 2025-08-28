@@ -1,7 +1,7 @@
 {
   "name": "astro-eslint-setup",
   "version": "0.0.0",
-  "description": "",
+  "description": "Set up ESLint automatically for Astro with TypeScript",
   "main": "index.js",
   "scripts": {
     "start": "tsup && node dist/index.mjs",
@@ -15,8 +15,12 @@
   "files": [
     "dist/**/*"
   ],
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "eslint",
+    "astro",
+    "eslint-config"
+  ],
+  "author": "danielz0102",
   "license": "ISC",
   "packageManager": "pnpm@10.15.0",
   "devDependencies": {
