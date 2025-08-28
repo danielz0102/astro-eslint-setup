@@ -1,6 +1,6 @@
 {
   "name": "astro-eslint-setup",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Set up ESLint automatically for Astro with TypeScript",
   "main": "index.js",
   "scripts": {
