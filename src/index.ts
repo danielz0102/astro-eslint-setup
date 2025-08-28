@@ -5,7 +5,7 @@ import {
   askForPackageManager,
   createConfigFile,
   installDependencies,
-} from './App'
+} from './app'
 
 intro('Welcome to Astro ESLint Setup 🚀')
 await askForInstallations()

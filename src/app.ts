@@ -30,7 +30,7 @@ export async function askForInstallations() {
 export async function askForPackageManager() {
   const result = await select({
     message: 'Which package manager would you like to use?',
-    options: packageManagers.map(pm => ({ value: pm, label: pm })),
+    options: packageManagers.map((pm) => ({ value: pm, label: pm })),
   })
 
   if (isCancel(result)) {
@@ -48,15 +48,15 @@ export async function installDependencies(packageManager: string) {
   const command = (() => {
     switch (packageManager) {
       case 'npm':
-        return 'npm i -D';
+        return 'npm i -D'
       case 'pnpm':
-        return 'pnpm i -D';
+        return 'pnpm i -D'
       case 'yarn':
-        return 'yarn add -D';
+        return 'yarn add -D'
       case 'bun':
-        return 'bun add -d';
+        return 'bun add -d'
       default:
-        throw new Error(`Unknown package manager: ${packageManager}`);
+        throw new Error(`Unknown package manager: ${packageManager}`)
     }
   })()
 
