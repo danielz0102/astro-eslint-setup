@@ -6,8 +6,8 @@
 	"scripts": {
 		"start": "tsup && node dist/index.mjs",
 		"build": "tsup",
-		"lint": "eslint .",
-		"format": "prettier --write ."
+		"lint": "biome lint",
+		"format": "biome format --write"
 	},
 	"bin": {
 		"astro-eslint-setup": "dist/index.mjs"
@@ -25,15 +25,10 @@
 	"license": "ISC",
 	"packageManager": "pnpm@10.15.0",
 	"devDependencies": {
-		"@eslint/js": "^9.34.0",
+		"@biomejs/biome": "2.2.4",
 		"@types/node": "24.3.0",
-		"eslint": "9.34.0",
-		"globals": "^16.3.0",
-		"jiti": "^2.5.1",
-		"prettier": "^3.6.2",
 		"tsup": "8.5.0",
-		"typescript": "5.9.2",
-		"typescript-eslint": "^8.40.0"
+		"typescript": "5.9.2"
 	},
 	"dependencies": {
 		"@clack/prompts": "0.11.0"
