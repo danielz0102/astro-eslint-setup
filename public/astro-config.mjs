@@ -29,6 +29,6 @@ export default defineConfig([
   },
 
   {
-    ignores: ['.astro/', '.dist/'],
+    ignores: ['.astro/', 'dist/'],
   },
 ])
