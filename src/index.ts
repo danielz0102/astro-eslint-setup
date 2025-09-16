@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import { intro, outro } from '@clack/prompts'
 import {
-  askForInstallations,
-  askForPackageManager,
-  createConfigFile,
-  installDependencies,
+	askForInstallations,
+	askForPackageManager,
+	createConfigFile,
+	installDependencies,
 } from './app'
 
 intro('Welcome to Astro ESLint Setup 🚀')
