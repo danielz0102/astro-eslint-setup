@@ -39,7 +39,6 @@ export default defineConfig([
 
   {
     rules: {
-      '@typescript-eslint/no-empty-object-type': 'off',
       '@typescript-eslint/no-unused-vars': [
         'error',
         { argsIgnorePattern: '^_' },
@@ -56,14 +55,6 @@ export default defineConfig([
 For more info, refer to the [ESLint Plugin Astro docs](https://ota-meshi.github.io/eslint-plugin-astro/)
 
 ### Opinionated Rules
-
-- `'@typescript-eslint/no-empty-object-type': 'off'`
-
-This lets you define empty Props interfaces. This is useful when you want your props to be the same as the HTMLAttributes you wish. For example:
-
-```ts
-interface Props extends HTMLAttributes<'button'> {}
-```
 
 - `'@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],`
 
